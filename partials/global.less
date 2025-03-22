@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height:100vh;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+main {
+    @media (min-width: @breakResolutions[tablet]) {
+        min-height: calc(100vh - 247px);
+    }
+}
+
+.container {
+    padding:0.5rem;
+    @media (min-width: @breakResolution[tablet]){
+        max-width:1024px;
+        margin: 0px auto;
+    }
+}
