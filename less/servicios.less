@@ -1,0 +1,176 @@
+//Variables remplazables
+@color-bg: #fafafa;
+@color-title: #094a72;
+@color-card-bg: #fff;
+@color-paragraph: #6c757d;
+
+//variables no reemplazables
+@font-primary: 'Open Sans', Arial, sans-serif;
+@box-shadow-default: 0px 15px 30px rgba(0, 0, 0, 0.2);
+@gradient-color: rgba(97, 182, 198, 1);
+@gradient-overlay: rgba(255, 255, 255, 0.216);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: @font-primary;
+}
+
+
+.wrapperr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: @color-bg;
+
+  h1 {
+    font-size: 3em;
+    margin: 120px 0 25px;
+    text-align: center;
+    font-weight: 500;
+    color: @color-title;
+    margin-right: 100px;
+  }
+
+  .parr {
+    margin-left: 15px;
+    margin-right: 5px;
+    text-align: justify;
+  }
+}
+
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 30px;
+}
+
+
+.card {
+  min-height: 220px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: @color-card-bg;
+  margin: 10px 4px;
+  box-shadow: @box-shadow-default;
+  transition: 0.3s;
+
+  i {
+    margin: 5px;
+    color: rgb(0, 0, 0);
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  p {
+    color: @color-paragraph;
+    text-align: center;
+  }
+
+  &:hover {
+    i,
+    p {
+      color: #fff;
+    }
+
+    h2 {
+      font-weight: 500;
+      color: #f2f2f2;
+    }
+  }
+}
+
+
+.card-hover(@n, @img) {
+  .card:nth-child(@{n}):hover {
+    background: linear-gradient(
+        45deg,
+        @gradient-color 0%,
+        @gradient-overlay 100%
+      ),
+      url(@img);
+    background-size: cover;
+  }
+}
+
+
+.card-hover(1, '../public/images/Evaluacion.png');
+.card-hover(2, '../public/images/Profilaxis.png');
+.card-hover(3, '../public/images/Restauraciones.png');
+.card-hover(4, '../public/images/Endodoncias.png');
+.card-hover(5, '../public/images/Extraccion.png');
+.card-hover(6, '../public/images/Blanqueamiento.png');
+.card-hover(7, '../public/images/Ortodoncia.png');
+.card-hover(8, '../public/images/Protesis.png');
+.card-hover(9, '../public/images/Implantes.png');
+.card-hover(10, '../public/images/Sonrisa.png');
+.card-hover(11, '../public/images/Odontopediatria.png');
+.card-hover(12, '../public/images/Exodoncia.png');
+
+
+@media (max-width: 768px) {
+  .content-box {
+    width: 90%;
+  }
+
+  .card {
+    width: 45%;
+    margin: 10px 2%;
+  }
+
+  .wrapperr {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .parr {
+      margin-left: 15px;
+      margin-right: 5px;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .content-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .wrapperr {
+    h1 {
+      font-size: 2em;
+      margin-right: 70px;
+      margin-top: 20px;
+    }
+
+    .parr {
+      margin-left: 35px;
+      text-align: justify;
+    }
+  }
+}
