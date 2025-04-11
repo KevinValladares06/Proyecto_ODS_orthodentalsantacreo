@@ -1,0 +1,114 @@
+
+/* AGENDAR CITA */
+main {
+    padding: 100px 20px 20px; /* Añadir espacio para evitar superposición con el header fijo */
+  }
+  
+  .agendar-contenedor {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #094a72;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  
+  .agendar-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .formulario-agendar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+
+    label {
+      margin-top: 17px;
+      color: #094a72;
+    }
+  }
+
+  
+  .formulario-agendar input,
+  .formulario-agendar select,
+  .formulario-agendar textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formulario-agendar textarea {
+    resize: vertical;
+  }
+  
+  .formulario-agendar button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #094a72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario-agendar button:hover {
+    background-color: #468ead;
+  }
+  
+  .info-agendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  
+  .imagen-agendar {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .texto-info {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #094a72;
+  }
+  
+  @media (max-width: 768px) {
+    .agendar-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .formulario-agendar {
+      margin-right: 0;
+    }
+  
+    .info-agendar {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  }
+
+  /* Errores */
+.error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODS Orthodental Santacreo</title>
+    <link rel="stylesheet" href="less/main.less" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    {{> header}}
+
+    <main>
+        <div class="contacts">
+            <div class="titulo">
+                <h2>¡Ponte en contacto con nosotros!</h2>
+            </div>
+            <!--form-->
+            <div class="box">
+                <div class="contact form">
+                    <h3>Enviar Mensaje</h3>
+                    <form id="form" class="form" action="">
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Nombre</span>
+                                    <input type="text" placeholder="Juan" id="nombre" />
+                                    <i class="bx bxs-check-circle"></i>
+                                    <i class="bx bxs-error-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Apellido</span>
+                                    <input type="text" placeholder="Pablo" id="apellido" />
+                                    <i class="bx bxs-check-circle"></i>
+                                    <i class="bx bxs-error-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="JuanPablo@Email.com" id="email" />
+                                    <i class="bx bxs-check-circle"></i>
+                                    <i class="bx bxs-error-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Télefono</span>
+                                    <input type="text" id="phone" pattern="\d*"
+                                        title="El teléfono debe contener solo números" placeholder="97349532" />
+                                    <i class="bx bxs-check-circle"></i>
+                                    <i class="bx bxs-error-circle"></i>
+                                    <small>Error message</small>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Mensaje</span>
+                                    <textarea placeholder="Escribe tu mensaje aquí..." id="mensaje"></textarea>
+                                    <small>Error message</small>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Enviar" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Info box-->
+                <div class="contact info">
+                    <h3>Información</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>
+                                Centro Comercial Las Hadas, segundo nivel, <br />local 207<br />Tegucigalpa
+                            </p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="mailto:orthodentalsantacreo@gmail.com">orthodentalsantacreo@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:8997-6800">8997-6800</a>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=50489976800&text=%C2%A1Hola!%20%F0%9F%98%80%20Me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20ODS%20%F0%9F%A6%B7"
+                                    target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://web.facebook.com/people/ODS-HN/61555834225033/"
+                                    target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ods_orthodentalsantacreo" target="_blank"><ion-icon
+                                        name="logo-instagram"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@ods_orthodentalsantacreo" target="_blank"><ion-icon
+                                        name="logo-tiktok"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Map-->
+                <div class="contact map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.610437403593!2d-87.23248228543508!3d14.04109092915357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6f97d882a87d45%3A0x3dd2fc934429c099!2sODS_OrthoDental%20Santacreo!5e0!3m2!1ses!2shn!4v1722136325852!5m2!1ses!2shn"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {{> footer}}
+
+    <script src="data/Inicio.js"></script>
+    <script src="data/Contacto.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
