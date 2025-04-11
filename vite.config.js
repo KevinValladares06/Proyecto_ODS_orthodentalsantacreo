@@ -30,7 +30,7 @@ const obtenerEntradas = ()=>{
 
 export default defineConfig({
     appType: 'mpa',
-    base: process.env.DEPLOY_BASE_URL,
+    base: process.env.DEPLOY_BASE_URL || '/Proyecto_ODS_orthodentalsantacreo/',
     build: {
         rollupOptions: {
             input: obtenerEntradas()
