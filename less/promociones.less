@@ -1,0 +1,163 @@
+@primary-color-promo: #2c3e50;
+@secondary-color-promo: #e4e4e4;
+@text-color-promo: #2c3e50;
+@font-main-promo: 'Segoe UI', sans-serif;
+
+body {
+  font-family: @font-main-promo;
+  margin: 0;
+  background: @secondary-color-promo;
+  color: @text-color-promo;
+  scroll-behavior: smooth;
+}
+
+body .promo{
+  margin-top: 70px;
+}
+
+.promo {
+    background: white;
+    color: rgb(0, 124, 149);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    position: relative;
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    p {
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+.cta-button {
+  display: inline-block;
+  background: rgb(97, 182, 198);
+  color: @secondary-color-promo;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background: lighten(@primary-color-promo, 10%);
+    color: white;
+  }
+}
+
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.promo-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h2 {
+    color: @primary-color-promo;
+    margin: 1rem;
+  }
+
+  p {
+    margin: 0 1rem 1.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 24px rgba(0,0,0,0.2);
+  }
+}
+
+.benefits {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    color: @primary-color-promo;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.agendar {
+  background: @primary-color-promo;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    background: white;
+    color: @primary-color-promo;
+
+    &:hover {
+      background: lighten(@primary-color-promo, 10%);
+      color: white;
+    }
+  }
+}
+
+@mobile: ~"(max-width: 768px)";
+
+@media @mobile {
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .promo-card {
+    width: 90%;
+
+    img {
+      height: 160px;
+    }
+  }
+
+  .benefits ul {
+    font-size: 1rem;
+  }
+
+  .agendar h2 {
+    font-size: 1.6rem;
+  }
+
+  .agendar p {
+    font-size: 1rem;
+  }
+}

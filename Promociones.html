@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promociones - Sonrisa Perfecta</title>
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    {{> header}}
+
+    <section class="promo">
+        <h1>Clínica Dental Santacreo</h1>
+        <p>Tu sonrisa, nuestra prioridad</p>
+        <a href="Agendar.html" class="cta-button">Agendar Cita</a>
+    </section>
+
+    <section class="promo-container">
+        <div class="promo-card">
+            <img src="public/images/blanqueamiento.jpg" alt="Blanqueamiento dental" />
+            <h2>Blanqueamiento 2x1</h2>
+            <p>Ven con un amigo y paguen solo uno. ¡Solo este mes!</p>
+        </div>
+        <div class="promo-card">
+            <img src="public/images/limpiezapromo.jpg" alt="Limpieza dental" />
+            <h2>Limpieza Gratis</h2>
+            <p>Al contratar un tratamiento de ortodoncia.</p>
+        </div>
+        <div class="promo-card">
+            <img src="public/images/consulta.jpg" alt="Consulta gratuita" />
+            <h2>Consulta Inicial Gratis</h2>
+            <p>Incluye diagnóstico y rayos X panorámicos.</p>
+        </div>
+        <div class="promo-card">
+            <img src="public/images/ortodoncia.jpg" alt="Ortodoncia con descuento" />
+            <h2>Ortodoncia 25% Off</h2>
+            <p>Planes accesibles y sin intereses.</p>
+        </div>
+        <div class="promo-card">
+            <img src="public/images/niños.jpg" alt="Atención para niños" />
+            <h2>Promo Infantil</h2>
+            <p>Chequeo + limpieza + regalito sorpresa 🎁</p>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>¿Por qué elegirnos?</h2>
+        <ul>
+            <li>🦷 Atención profesional y cálida</li>
+            <li>💳 Precios accesibles y formas de pago</li>
+            <li>🧼 Instalaciones modernas y seguras</li>
+            <li>📍 Ubicación céntrica con parqueo</li>
+        </ul>
+    </section>
+
+    <section class="agendar" id="agendar">
+        <h2>¿Listo para tu nueva sonrisa?</h2>
+        <p>Haz tu cita hoy mismo y aprovecha nuestras promociones.</p>
+        <a href="https://api.whatsapp.com/send?phone=50489976800&text=%C2%A1Hola!%20%F0%9F%98%80%20Me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20ODS%20%F0%9F%A6%B7"
+            target="_blank" class="cta-button">Agendar por WhatsApp</a>
+    </section>
+
+    {{> footer}}
+    <script type="module" src="data/Inicio.js"></script>
+</body>
+
+</html>
