@@ -13,55 +13,7 @@
 <body>
     {{> header}}
     <main>
-        <div class="container agendar-contenedor">
-            <h1>Agendar Cita</h1>
-            <div class="agendar-flex">
-                <form class="formulario-agendar">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required />
-
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required />
-
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required />
-
-                    <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha" name="fecha" required />
-
-                    <label for="hora">Hora:</label>
-                    <input type="time" id="hora" name="hora" required />
-
-                    <label for="servicio">Servicio:</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="Diseño de sonrisa">Diseño de sonrisa</option>
-                        <option value="Limpieza general">Limpieza general</option>
-                        <option value="Protesis">Protesis</option>
-                        <option value="Blanqueamiento">Blanqueamiento</option>
-                        <option value="Ortodoncia">Ortodoncia</option>
-                        <option value="Endodoncia">Endodoncia</option>
-                        <option value="Cirugía de cordales">Cirugía de cordales</option>
-                        <option value="Implantes">Implantes</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
-
-                    <button type="submit">Agendar</button>
-                </form>
-                <div class="info-agendar">
-                    <img src="public/images/agendacita.jpg" alt="Agendar Cita" class="imagen-agendar" />
-                    <div class="texto-info">
-                        <p>Utilice este formulario para agendar una cita con nosotros. Por favor complete todos los
-                            campos y nos pondremos en contacto para confirmar su cita. </br>
-                            También puede llamar al +504 8997-6800 o visitarnos en el Centro Comercial Las Hadas,
-                            segundo nivel, local 207 para más información.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{> agendar}}
     </main>
     {{> footer}}
     <script type="module" src="data/Inicio.js"></script>
