@@ -1,11 +1,11 @@
 
 /* AGENDAR CITA */
 main {
-    padding: 100px 20px 20px; /* Añadir espacio para evitar superposición con el header fijo */
+    padding: 100px 20px 20px; 
   }
   
   .agendar-contenedor {
-    background-color: #f9f9f9;
+    background-color: @white-quaternary-color;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,7 @@ main {
   
   h1 {
     text-align: center;
-    color: #094a72;
+    color: @blue-secondary-color;
     margin-bottom: 40px;
     margin-left: 0px;
     margin-top: 40px;
@@ -32,7 +32,7 @@ main {
 
     label {
       margin-top: 17px;
-      color: #094a72;
+      color: @blue-secondary-color;
     }
   }
 
@@ -42,7 +42,7 @@ main {
   .formulario-agendar textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid @white-septenary-color;
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
@@ -55,15 +55,15 @@ main {
   .formulario-agendar button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #094a72;
-    color: white;
+    background-color: @blue-secondary-color;
+    color: @white-primary-color;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .formulario-agendar button:hover {
-    background-color: #468ead;
+    background-color: @blue-quaternary-color;
   }
   
   .info-agendar {
@@ -80,12 +80,12 @@ main {
   }
   
   .texto-info {
-    background-color: #e3f2fd;
+    background-color: @white-quinary-color;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: justify;
-    color: #094a72;
+    color: @blue-secondary-color;
   }
   
   @media (max-width: 768px) {
@@ -106,7 +106,7 @@ main {
 
   /* Errores */
 .error-message {
-    color: red;
+    color: @red-accent-color;
     font-weight: bold;
     font-size: 0.875em;
     margin-top: 0.25em;

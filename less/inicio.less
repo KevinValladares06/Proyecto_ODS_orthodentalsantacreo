@@ -24,15 +24,15 @@
         width: 300px;
         top:calc(50% - 150px);
         left:calc(50% - 450px);
-        color:#fff;
+        color:@white-primary-color;
 
         button {
             font-size: 1.1rem;
             display:inline-block;
             padding: 0.5rem 2rem;
-            background-color: #267190;
-            color: #ffffff;
-            border: 1px solid #094a72;
+            background-color: @blue-primary-color;
+            color: @white-primary-color;
+            border: 1px solid @blue-secondary-color;
             border-radius: 27px;
             margin-top: 22rem;
 
@@ -40,7 +40,7 @@
         }
 
         button:hover {
-            background: rgb(97, 182, 198);
+            background: @blue-quinary-color;
         }
     }
 }
@@ -105,7 +105,7 @@
 }
 
 .img-container {
-    flex: 0 0 30%; /* La imagen ocupa el 30% del contenedor */
+    flex: 0 0 30%; 
     padding-right: 20px;
     display: flex;
     justify-content: center;
@@ -121,13 +121,13 @@
 
 
 .res-des {
-    flex: 0 0 70%; /* El texto ocupa el 70% del contenedor */
+    flex: 0 0 70%; 
     padding-right: 20px;
     text-align: center;
 }
 
 .head {
-    color: #000000;
+    color: @black-color;
     font-size: 2.7rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -144,15 +144,15 @@
     font-size: 1rem;
     padding: 0.7rem 0.7rem;
     border-radius: 25rem;
-    background-color: #267190;
-    color: #ffffff;
-    border: 1px solid #094a72;
+    background-color: @blue-primary-color;
+    color: @white-primary-color;
+    border: 1px solid @blue-secondary-color;
 }
 
 .cta-btn:hover,
 .cta-btn:focus {
-    color: #fff;
-    background: rgb(97, 182, 198);
+    color: @white-primary-color;
+    background: @blue-quinary-color;
 }
 
 .global {
@@ -162,7 +162,7 @@
 }
 
 .hea-dark {
-    color: #094a72;
+    color: @blue-secondary-color;
     letter-spacing: .3rem;
     margin-right: 5rem;
 }
@@ -182,7 +182,7 @@
 @media (max-width: 768px) {
     .containerd {
         flex-direction: column;
-        padding: 0 1rem; /* Reducción de padding para dispositivos móviles */
+        padding: 0 1rem; 
     }
 
     .img-container,
@@ -192,13 +192,13 @@
     }
 
     .img-container {
-        order: 1; /* La imagen estará primero en dispositivos móviles */
-        padding-bottom: 1rem; /* Espacio debajo de la imagen */
+        order: 1; 
+        padding-bottom: 1rem; 
     }
 
     .img-container img {
         width: 100%;
-        max-width: 200px; /* Ajuste del tamaño máximo de la imagen */
+        max-width: 200px; 
         height: auto;
         object-fit: cover;
     }
@@ -210,17 +210,17 @@
 
     .res-des {
         padding-left: 0;
-        padding-right: 1rem; /* Agregar algo de espacio a los lados */
+        padding-right: 1rem;
     }
 
     .head {
-        font-size: 2.2rem; /* Ajustar el tamaño del texto en móviles */
-        margin-top: 0; /* Eliminar margen superior para mayor consistencia */
+        font-size: 2.2rem; 
+        margin-top: 0; 
     }
 
     .cta-btn {
-        font-size: 0.9rem; /* Ajustar el tamaño del botón para pantallas más pequeñas */
-        padding: 0.7rem 0.8rem; /* Ajustar el padding del botón */
+        font-size: 0.9rem; 
+        padding: 0.7rem 0.8rem; 
     }
 }
 
@@ -244,8 +244,8 @@
 }
 
 .image-boxs {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: @white-tertiary-color;
+    border: 1px solid @white-senary-color;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -286,10 +286,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 67, 130, 0.5); /* Fondo semi-transparente */
-    color: #fff; /* Color del texto del botón */
+    background: rgba(0, 67, 130, 0.5); 
+    color: @white-primary-color; 
     border: none;
-    font-size: 24px; /* Tamaño del símbolo */
+    font-size: 24px; 
     padding: 10px;
     cursor: pointer;
     z-index: 10;
@@ -329,7 +329,7 @@
     width: 100%;
     max-width: 1200px;
     padding: 2rem;
-    background-color: #fff;
+    background-color: @white-primary-color;
     box-shadow: 0 2px 4px rgba(84, 139, 184, 0.304);
 }
 
@@ -340,13 +340,13 @@
 
     h2 {
         font-size: 1.5rem;
-        color: #448b99;
+        color: @blue-tertiary-color;
         margin: 0.5rem;
     }
 
     p {
         font-size: 1rem;
-        color: #000000;
+        color: @black-color;
         font-weight: 600;
         margin-left: 0.5rem;
     }
@@ -362,14 +362,14 @@
 
     span {
         font-size: 2rem;
-        color: #448b99;
+        color: @blue-tertiary-color;
     }
 }
 
 
 .clinic-text h2 {
     font-size: 1.5rem;
-    color: #448b99;
+    color: @blue-tertiary-color;
     margin: 0.5rem;
     margin-top: 0.10rem;
     margin-right: 5rem;
@@ -378,12 +378,12 @@
 .address,
 .phone {
     font-size: 1rem;
-    color: #000000;
+    color: @black-color;
     font-weight: 600;
     margin-left: 0.5rem;
 }
 
-/* Estilo para la imagen */
+
 .image {
     width: 100%;
     max-width: 1250px;
@@ -392,7 +392,7 @@
     margin-bottom: 1rem;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 1024px) {
     .info-container {
         flex-direction: column;

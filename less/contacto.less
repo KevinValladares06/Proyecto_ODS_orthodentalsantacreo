@@ -13,7 +13,7 @@
     }
 
     .titulo h2{
-        color: #094a72;
+        color: @blue-secondary-color;
         font-weight: 600;
     }
 }
@@ -33,11 +33,11 @@
 
 .contact{
     padding: 40px;
-    background: #ffffff ;
+    background: @white-primary-color ;
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 
     h3{
-        color: #0e3959;
+        color: @blue-senary-color;
         font-weight: 500;
         font-size: 1.4em;
         margin-bottom: 10px;
@@ -78,7 +78,7 @@
     width: 50%;
 
     span{
-        color:#0e3959;
+        color:@blue-senary-color;
         margin-top: 10px;
         margin-bottom: 5px;
         font-weight: 500;
@@ -94,22 +94,22 @@
     padding: 10px;
     font-size: 1.1em;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid @dark-gray-color;
 }
 
 .inputBox textarea{
     padding: 10px;
     font-size: 1.1em;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid @dark-gray-color;
     min-height: 220px;
     margin-bottom: 10px;
     resize: vertical;
 }
 
 .inputBox input[type="submit"]{
-    background: #0e3959;
-    color: #fff;
+    background: @blue-senary-color;
+    color: @primary-color-light;
     border: none;
     font-size: 1.1em;
     max-width: 100px;
@@ -119,19 +119,19 @@
 }
 
 .inputBox ::placeholder{
-    color:#aeaeae;
+    color:@white-gray-color;
     font-size: 0.9rem;
     font-style: italic;
 }
 
 .inputBox.error input,
 .inputBox.error textarea {
-    border-color: #e74c3c;
+    border-color: @red-accent-color;
 }
 
 .inputBox.success input,
 .inputBox.success textarea {
-    border-color: #2ecc71;
+    border-color: @green-accent-color;
 }
 
 .inputBox i{
@@ -143,18 +143,18 @@
 
 
 .inputBox.success .bxs-check-circle {
-    color: #2ecc71;
+    color: @green-accent-color;
     visibility: hidden;
 }
 
 
 .inputBox.error i.bxs-error-circle {
-	color: #e74c3c;
+	color: @red-accent-color;
 	visibility: visible;
 }
 
 .inputBox small {
-    color: #e74c3c;
+    color: @red-accent-color;
     visibility: hidden;
 }
 
@@ -170,10 +170,10 @@
 
 /* info */
 .info{
-    background: #094a72;
+    background: @blue-secondary-color;
 
     h3{
-        color: #fff;
+        color: @white-primary-color;
     }
 }
 
@@ -186,7 +186,7 @@
     span{
         min-width: 40px;
         height: 40px;
-        color: #fff;
+        color: @white-primary-color;
         background: #5caed1;
         display: flex;
         justify-content: center;
@@ -197,12 +197,12 @@
     }
 
     p{
-        color: #fff;
+        color: @white-primary-color;
         font-size: 1.1em;
     }
 
     a{
-        color: #fff;
+        color: @white-primary-color;
         text-decoration: none;
         font-size: 1.1em;
     }
@@ -218,13 +218,13 @@
         margin-right: 15px;
 
         a{
-            color: #fff;
+            color: @white-primary-color;
             font-size: 2em;
-            color: #ccc;
+            color: @white-septenary-color;
         }
 
         a:hover{
-            color: #fff;
+            color: @white-primary-color;
         }
     }
 }
@@ -243,7 +243,7 @@
 /* Responsive */
 @media (max-width: 768px){
     body{
-        background: #fff;
+        background: @white-primary-color;
     }
     .contacts{
         padding: 20px;
